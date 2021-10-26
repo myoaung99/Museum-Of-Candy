@@ -75,20 +75,20 @@
     </div>
   </section>
 
-  <!--Second Section-->
+  <!--Content Section-->
   <section class="container-fluid px-0">
     <div class="row align-items-center content">
 
-      <!--Second Section Image-->
+      <!--First Row Section Image-->
       <div class="col-md-6 order-2 order-md-1">
         <img src="imgs/milk.png" alt="" class="img-fluid">
       </div>
 
-      <!--Second Section Text-->
+      <!--First Row Section Text-->
       <div class="col-md-6 text-center order-1 oreder-md-2">
         <div class="row justify-content-center">
 
-          <div class="col-10 col-lg-8 blurb">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
             <h2>MUSEUM OF CANDY</h2>
             <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt, nemo, hic
@@ -104,18 +104,49 @@
       </div>
 
     </div>
+
+    <!--Second Row Section-->
     <div class="row align-items-center content">
 
-      <!--Second Section Image-->
+
+      <div class="col-md-6 text-center order-1 oreder-md-2">
+        <div class="row justify-content-center">
+
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt, nemo, hic
+              mollitia minus officia optio cum perspiciatis labore soluta obcaecati repellendus voluptate provident
+              dolore modi unde adipisci animi maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              laboriosam, neque ipsum,
+              dolorem nulla quam ducimus quas atque alias distinctio quod id tenetur velit adipisci magni, sed molestias
+              maiores facilis.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Second Row Section Image-->
+      <div class="col-md-6 order-2 order-md-1">
+        <img src="imgs/gumball.png" alt="" class="img-fluid">
+      </div>
+
+    </div>
+
+    <!--Third Row Section-->
+    <div class="row align-items-center content">
+
+      <!--Third Row Section Image-->
       <div class="col-md-6 order-2 order-md-1">
         <img src="imgs/milk.png" alt="" class="img-fluid">
       </div>
 
-      <!--Second Section Text-->
+      <!--Third Row Section Text-->
       <div class="col-md-6 text-center order-1 oreder-md-2">
         <div class="row justify-content-center">
 
-          <div class="col-10 col-lg-8 blurb">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
             <h2>MUSEUM OF CANDY</h2>
             <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nesciunt, nemo, hic
@@ -147,6 +178,14 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
 
 </html>
